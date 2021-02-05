@@ -8,5 +8,5 @@
 #'
 #' @examples
 pct_diff <- function(n1, n2) {
-  abs((n1-n2)/((n1+n2)/2))*100
+  abs((n1-n2)/mean(n1,n2))*100
 }
